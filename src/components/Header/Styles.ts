@@ -3,8 +3,11 @@ import { styled } from "../../styles/index";
 
 export const HeaderContainer = styled("header", {
   boxShadow: "0 2px 4px 0 rgb(0 0 0 / 10%)",
-  backgroundColor: "$white",
   display: "flex",
+  position: "fixed",
+  zIndex: "9999",
+  backgroundColor: "$white",
+  width: "100vw",
 });
 
 export const NavAreaContainer = styled("div", {

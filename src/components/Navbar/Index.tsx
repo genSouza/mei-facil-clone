@@ -1,4 +1,4 @@
-import { mainMenuItems } from "@/Constants/Menu";
+import { mainMenuItems } from "@/constants/Menu";
 import { MenuItems } from "../MenuItem/Index";
 import * as s from "./Styles";
 
