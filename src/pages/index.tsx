@@ -36,6 +36,8 @@ export default function Home() {
             width={700}
             height={653}
             alt="homem escrevendo"
+            loading="eager"
+            priority={true}
           ></Image>
         </s.HeaderContentLast>
       </s.SiteHeader>

@@ -12,7 +12,7 @@ export const LinkWrapper = styled(Link, {
   fontSize: "$14",
   padding: ".7rem 1rem",
   textDecoration: "none",
-  fontFamily: "$inter",
+  fontFamily: "Inter, sans-serif",
 
   variants: {
     variant: {

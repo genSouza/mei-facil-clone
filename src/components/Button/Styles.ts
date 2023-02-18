@@ -5,7 +5,7 @@ export const ButtonWrapper = styled("button", {
   textDecoration: "none",
   cursor: "pointer",
   border: 0,
-  fontFamily: "$default",
+  fontFamily: "Inter, sans-serif",
 
   variants: {
     variant: {

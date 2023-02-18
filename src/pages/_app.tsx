@@ -1,4 +1,3 @@
-import "@/styles/globals.scss";
 import { globalStyles } from "../styles/global";
 import type { AppProps } from "next/app";
 import { Header } from "@/components/Header/Index";

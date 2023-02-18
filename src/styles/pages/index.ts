@@ -14,20 +14,24 @@ export const HeaderContentFirst = styled("div", {
 });
 
 export const HeaderContentMiddle = styled("div", {
+  marginBottom: "100px",
   h1: {
     fontSize: "$82",
     color: "$blue100",
-    fontFamily: "$helvetica",
+    fontFamily: "$helveticaLightUltra",
     lineHeight: "5.5rem",
     fontWeight: "$regular",
+    strong: {
+      fontFamily: "$helveticaLight",
+    },
   },
   p: {
-      fontFamily: "$helvetica",
-      fontWeight: "$regular",
-      marginTop: "65px",
-      lineHeight: "19px",
-      fontSize: "$16",
-      color: "$blue100",
+    fontFamily: "$helvetica",
+    fontWeight: "$regular",
+    marginTop: "65px",
+    lineHeight: "19px",
+    fontSize: "$16",
+    color: "$blue100",
   },
 });
 
