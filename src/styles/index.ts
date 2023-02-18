@@ -75,6 +75,7 @@ export const {
       default: "Inter, sans-serif",
       moranga: "moranga",
       inter: "Inter",
+      helvetica: "'HelveticaNeueLT Std Lt', sans-serif",
     },
     space: {
       1: "0.25rem",
