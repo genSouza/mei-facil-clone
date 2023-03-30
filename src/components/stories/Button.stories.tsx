@@ -1,4 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
+import { ArrowRight } from "phosphor-react";
 import { Button, ButtonProps } from "../Button/Index";
 
 export default {
@@ -11,7 +12,19 @@ export default {
   },
   argTypes: {
     variant: {
-      options: ["primary", "outline"],
+      options: ["primary", "secondary"],
+      control: {
+        type: "select",
+      },
+    },
+    shape: {
+      options: ["square", "rounded"],
+      control: {
+        type: "select",
+      },
+    },
+    size: {
+      options: ["md", "lg", "xg"],
       control: {
         type: "select",
       },
@@ -19,11 +32,57 @@ export default {
   },
 } as Meta<ButtonProps>;
 
-export const Primary: StoryObj<ButtonProps> = {};
-
-export const Outline: StoryObj<ButtonProps> = {
+export const Primary: StoryObj<ButtonProps> = {
   args: {
-    variant: "outline",
-    children: "Já tenho um MEI"
+    variant: "primary",
+    children: "Abrir Mei",
+    shape: "rounded",
+    size: "md",
+  },
+};
+
+export const PrimaryLarge: StoryObj<ButtonProps> = {
+  args: {
+    variant: "primary",
+    children: "emitir das agora",
+    shape: "square",
+    size: "lg",
+  },
+};
+
+export const SecondaryLarge: StoryObj<ButtonProps> = {
+  args: {
+    variant: "secondary",
+    children: "já tenho um mei",
+    shape: "square",
+    size: "lg",
+  },
+};
+
+export const PrimaryExtraLarge: StoryObj<ButtonProps> = {
+  args: {
+    variant: "primary",
+    children: "abrir um mei",
+    shape: "square",
+    size: "xg",
+  },
+};
+
+export const SecondaryExtraLarge: StoryObj<ButtonProps> = {
+  args: {
+    variant: "secondary",
+    children: "já tenho um mei",
+    shape: "square",
+    size: "xg",
+  },
+};
+
+export const PrimaryExtraLargeWithIcon: StoryObj<ButtonProps> = {
+  args: {
+    variant: "primary",
+    children: "abrir agora",
+    icon: <ArrowRight size={32} weight={"thin"}/>,
+    shape: "square",
+    size: "xg",
   },
 };
