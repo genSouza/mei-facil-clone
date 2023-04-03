@@ -9,7 +9,7 @@ export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   size?: "md" | "lg" | "xg";
   variant?: "primary" | "secondary";
   children: ReactNode;
-  icon: ReactNode;
+  icon?: ReactNode;
 }
 
 /**
