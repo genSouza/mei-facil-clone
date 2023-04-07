@@ -81,7 +81,7 @@ export const PrimaryExtraLargeWithIcon: StoryObj<ButtonProps> = {
   args: {
     variant: "primary",
     children: "abrir agora",
-    icon: <ArrowRight size={32} weight={"thin"}/>,
+    icon: <ArrowRight size={32} weight={"regular"}/>,
     shape: "square",
     size: "xg",
   },

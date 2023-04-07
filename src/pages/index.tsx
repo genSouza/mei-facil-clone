@@ -2,10 +2,11 @@ import * as s from "@/styles/pages/index";
 import Image from "next/image";
 import HeaderPartOne from "/public/bg_index_header_part-1.png";
 import HeaderPartTwo from "/public/home-hero-700x653.png";
+import { CardMei } from "@/components/Card/Index";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <s.SiteHeader>
         <s.HeaderContentFirst>
           <Image
@@ -41,6 +42,21 @@ export default function Home() {
           ></Image>
         </s.HeaderContentLast>
       </s.SiteHeader>
-    </main>
+      <s.SectionCardTop>
+        <CardMei
+          buttonText="Abrir agora"
+          onClick={() => {}}
+          text="Abra seu MEI grátis com ajuda de especialistas e tenha seu CNPJ em minutos!"
+          title="Abrir um Mei"
+        />
+        <CardMei
+          buttonText="Conheça agora"
+          onClick={() => {}}
+          text="Precisa de ajuda com burocracia ou quer saber como vender mais?"
+          title="Já tenho mei"
+          variant="secondary"
+        />
+      </s.SectionCardTop>
+    </div>
   );
 }

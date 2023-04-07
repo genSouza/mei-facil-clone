@@ -30,7 +30,7 @@ export const CardMei = ({
       ></s.CardTitle>
       <s.CardText>{text}</s.CardText>
       <ButtonMei
-        icon={<ArrowRight size={32} weight="thin" />}
+        icon={<ArrowRight size={32} weight="regular" />}
         shape="square"
         size="lg"
         variant="primary"

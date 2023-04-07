@@ -29,21 +29,23 @@ export const CardWrapper = styled("div", {
   },
 });
 
-export const CardTitle = styled("h3", {
-  fontSize: "3.125rem",
+export const CardTitle = styled("h1", {
+  fontSize: "$50",
   margin: "32px 0 18px 50px",
   color: "$white",
-  fontFamily: "$helveticaLightUltra",
+  fontFamily: "$HelveticaNeue25",
+  lineHeight: "3.25rem",
   fontWeight: "$regular",
+
   span: {
-    fontFamily: "$helveticaLight",
-    fontWeight: "$bold",
+    fontFamily: "$HelveticaNeue55",
+    fontWeight: "$regular",
   },
 });
 
 export const CardText = styled("p", {
   fontSize: "16px",
   color: "$white",
-  fontFamily: "$helvetica",
+  fontFamily: "$HelveticaNeue45",
   margin: "0 32px 0 50px",
 });

@@ -18,15 +18,15 @@ export const HeaderContentMiddle = styled("div", {
   h1: {
     fontSize: "$82",
     color: "$blue100",
-    fontFamily: "$helveticaLightUltra",
+    fontFamily: "$HelveticaNeue25",
     lineHeight: "5.5rem",
     fontWeight: "$regular",
     strong: {
-      fontFamily: "$helveticaLight",
+      fontFamily: "$HelveticaNeue45",
     },
   },
   p: {
-    fontFamily: "$helvetica",
+    fontFamily: "$HelveticaNeue45",
     fontWeight: "$regular",
     marginTop: "65px",
     lineHeight: "19px",
@@ -37,4 +37,18 @@ export const HeaderContentMiddle = styled("div", {
 
 export const HeaderContentLast = styled("div", {
   marginLeft: "auto",
+});
+
+export const SectionCardTop = styled("div", {
+  //align items center
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  //space between
+  gap: "2rem",
+
+  position: "relative",
+  top: "-50px",
+  marginBottom: "-50px",
 });
