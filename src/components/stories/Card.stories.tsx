@@ -7,37 +7,25 @@ export default {
   args: {
     title: "Abrir um Mei",
     text: "Abra seu MEI grátis com ajuda de especialistas e tenha seu CNPJ em minutos!",
-    buttonText: "Abrir agora ->",
+    buttonText: "Abrir agora",
   },
-  // argTypes: {
-  //   variant: {
-  //     options: ["primary", "secondary"],
-  //     control: {
-  //       type: "select",
-  //     },
-  //   },
-  //   shape: {
-  //     options: ["square", "rounded"],
-  //     control: {
-  //       type: "select",
-  //     },
-  //   },
-  //   size: {
-  //     options: ["md", "lg", "xg"],
-  //     control: {
-  //       type: "select",
-  //     },
-  //   },
-  //},
+  argTypes: {
+    variant: {
+      options: ["primary", "secondary"],
+      control: {
+        type: "select",
+      },
+    },
+  },
 } as Meta<CardProps>;
 
-export const Primary: StoryObj<CardProps> = {
-  // args: {
-  //   variant: "primary",
-  //   children: "Abrir Mei",
-  //   shape: "rounded",
-  //   size: "md",
-  // },
+export const Primary: StoryObj<CardProps> = {};
+
+export const Secondary: StoryObj<CardProps> = {
+  args: {
+    variant: "secondary",
+    title: "Já tenho mei",
+    text: "Precisa de ajuda com burocracia ou quer saber como vender mais?",
+    buttonText: "Conheça agora",
+  },
 };
-
-

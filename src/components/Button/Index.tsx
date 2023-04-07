@@ -15,7 +15,7 @@ export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
 /**
  * Default props
  */
-export const Button = ({
+export const ButtonMei = ({
   variant = "primary",
   shape = "square",
   size = "md",

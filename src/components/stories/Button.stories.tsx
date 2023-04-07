@@ -1,10 +1,10 @@
 import { StoryObj, Meta } from "@storybook/react";
 import { ArrowRight } from "phosphor-react";
-import { Button, ButtonProps } from "../Button/Index";
+import { ButtonMei, ButtonProps } from "../Button/Index";
 
 export default {
   tittle: "Components/Button",
-  component: Button,
+  component: ButtonMei,
   args: {
     children: "Abrir Mei",
     variant: "primary",

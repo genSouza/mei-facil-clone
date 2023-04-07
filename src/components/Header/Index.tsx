@@ -3,7 +3,7 @@ import logo from "/public/logo-menu.svg";
 
 import { Navbar } from "../Navbar/Index";
 import * as s from "./Styles";
-import { Button } from "../Button/Index";
+import { ButtonMei } from "../Button/Index";
 export const Header = () => {
   return (
     <s.HeaderContainer>
@@ -18,7 +18,7 @@ export const Header = () => {
           />
         </s.LogoContainer>
         <Navbar />
-        <Button variant="primary">Abrir MEI</Button>
+        <ButtonMei variant="primary">Abrir MEI</ButtonMei>
       </s.NavAreaContainer>
     </s.HeaderContainer>
   );
