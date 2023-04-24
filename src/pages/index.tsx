@@ -3,8 +3,21 @@ import Image from "next/image";
 import HeaderPartOne from "/public/bg_index_header_part-1.png";
 import HeaderPartTwo from "/public/home-hero-700x653.png";
 import { CardMei } from "@/components/Card/Index";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
-export default function Home() {
+// get static props
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["index"])),
+    },
+  };
+}
+
+export default function Home(locale: any) {
+  const { t } = useTranslation();
+
   return (
     <div>
       <s.SiteHeader>
@@ -18,17 +31,17 @@ export default function Home() {
         </s.HeaderContentFirst>
         <s.HeaderContentMiddle>
           <h1>
-            Ser <strong>MEI</strong>
+            {t("index:ser")} <strong>{t("index:mei")}</strong>
             <br />
-            ficou muito <br />
-            mais fácil
+            {t("index:ficou-muito")} <br />
+            {t("index:mais-facil")}
           </h1>
           <p>
-            Uma plataforma digital completa para
+            {t("index:paragrafo-1")}
             <br />
-            você que já é ou quer se tornar um
+            {t("index:paragrafo-2")}
             <br />
-            microempreendedor individual
+            {t("index:paragrafo-3")}
           </p>
         </s.HeaderContentMiddle>
         <s.HeaderContentLast>
@@ -44,16 +57,16 @@ export default function Home() {
       </s.SiteHeader>
       <s.SectionCardTop>
         <CardMei
-          buttonText="Abrir agora"
+          buttonText={t("index:texto-botao-1")}
           onClick={() => {}}
-          text="Abra seu MEI grátis com ajuda de especialistas e tenha seu CNPJ em minutos!"
-          title="Abrir um Mei"
+          text={t("index:texto-card-1")}
+          title={t("index:titulo-card-1")}
         />
         <CardMei
-          buttonText="Conheça agora"
+          buttonText={t("index:texto-botao-1")}
           onClick={() => {}}
-          text="Precisa de ajuda com burocracia ou quer saber como vender mais?"
-          title="Já tenho mei"
+          text={t("index:texto-card-1")}
+          title={t("index:titulo-card-1")}
           variant="secondary"
         />
       </s.SectionCardTop>
