@@ -3,8 +3,10 @@ import logo from "/public/logo_mf_neon_white.svg";
 import googleLogo from "/public/logo_google-play_white.svg";
 import Image from "next/image";
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from "phosphor-react";
+import { useTranslation } from "next-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation("footer");
   return (
     <s.FooterWrapper>
       <s.FooterContainer>
@@ -26,7 +28,7 @@ export const Footer = () => {
             </s.ListContainer>
           </s.SocialMediaContainer>
           <s.DownloadContainer>
-            <p>Baixe o aplicativo</p>
+            <p>{t("footer:baixe-o-aplicativo")}</p>
             <Image
               src={googleLogo}
               width={210}
@@ -38,57 +40,60 @@ export const Footer = () => {
         <s.FooterDivider />
         <s.FooterSectionMiddle>
           <div>
-            <s.SectionTitle>Abrir MEI</s.SectionTitle>
-            <s.SectionTitle>Aplicativo</s.SectionTitle>
-            <s.SectionTitleFather>Serviços</s.SectionTitleFather>
+            <s.SectionTitle>{t("footer:abrir-mei")}</s.SectionTitle>
+            <s.SectionTitle>{t("footer:aplicativo")}</s.SectionTitle>
+            <s.SectionTitleFather>{t("footer:servicos")}</s.SectionTitleFather>
             <s.ListContainer>
-              <s.ListItem>DAS</s.ListItem>
-              <s.ListItem>DASN</s.ListItem>
-              <s.ListItem>Documentos do MEI</s.ListItem>
-              <s.ListItem>Nota Fiscal</s.ListItem>
-              <s.ListItem>Cursos do MEI</s.ListItem>
+              <s.ListItem>{t("footer:das")}</s.ListItem>
+              <s.ListItem>{t("footer:dasn")}</s.ListItem>
+              <s.ListItem>{t("footer:documentos-do-mei")}</s.ListItem>
+              <s.ListItem>{t("footer:nota-fiscal")}</s.ListItem>
+              <s.ListItem>{t("footer:cursos-do-mei")}</s.ListItem>
             </s.ListContainer>
           </div>
           <div>
-            <s.SectionTitle>Cartão de Crédito</s.SectionTitle>
-            <s.SectionTitleFather>Meios de Pagamento</s.SectionTitleFather>
+            <s.SectionTitle>{t("footer:cartao-de-credito")}</s.SectionTitle>
+            <s.SectionTitleFather>
+              {t("footer:meios-de-pagamento")}
+            </s.SectionTitleFather>
             <s.ListContainer>
-              <s.ListItem>Boleto</s.ListItem>
-              <s.ListItem>Maquininha</s.ListItem>
-              <s.ListItem>Cobrar com o PIX</s.ListItem>
+              <s.ListItem>{t("footer:boleto")}</s.ListItem>
+              <s.ListItem>{t("footer:maquininha")}</s.ListItem>
+              <s.ListItem>{t("footer:cobrar-com-o-pix")}</s.ListItem>
             </s.ListContainer>
-            <s.SectionTitleFather>Contabilidade</s.SectionTitleFather>
+            <s.SectionTitleFather>
+              {t("footer:contabilidade")}
+            </s.SectionTitleFather>
             <s.ListContainer>
-              <s.ListItem>Alterações de dados MEI</s.ListItem>
-            </s.ListContainer>
-          </div>
-          <div>
-            <s.SectionTitleFather>Conta Digital</s.SectionTitleFather>
-            <s.ListContainer>
-              <s.ListItem>Transferências</s.ListItem>
-              <s.ListItem>Pix</s.ListItem>
-              <s.ListItem>Pagar contas</s.ListItem>
-            </s.ListContainer>
-            <s.SectionTitleFather>SOBRE A MEI FACIL</s.SectionTitleFather>
-            <s.ListContainer>
-              <s.ListItem>Blog</s.ListItem>
-              <s.ListItem>Dúvidas</s.ListItem>
-              <s.ListItem>Quem é a MEI Fácil</s.ListItem>
+              <s.ListItem>{t("footer:alteracoes-de-dados-mei")}</s.ListItem>
             </s.ListContainer>
           </div>
           <div>
-            <s.SectionTitle>FALE COM A MEI FÁCIL:</s.SectionTitle>
+            <s.SectionTitleFather>
+              {t("footer:conta-digital")}
+            </s.SectionTitleFather>
             <s.ListContainer>
-              <s.ListItem>
-                Para falar sobre contabilidade, DAS e outros impostos:
-              </s.ListItem>
+              <s.ListItem>{t("footer:transferencias")}</s.ListItem>
+              <s.ListItem>{t("footer:pix")}</s.ListItem>
+              <s.ListItem>{t("footer:pagar-contas")}</s.ListItem>
+            </s.ListContainer>
+            <s.SectionTitleFather>
+              {t("footer:sobre-a-mei-facil")}
+            </s.SectionTitleFather>
+            <s.ListContainer>
+              <s.ListItem>{t("footer:blog")}</s.ListItem>
+              <s.ListItem>{t("footer:duvidas")}</s.ListItem>
+              <s.ListItem>{t("footer:quem-e-a-mei-facil")}</s.ListItem>
+            </s.ListContainer>
+          </div>
+          <div>
+            <s.SectionTitle>{t("footer:fale-com-a-mei-facil")}</s.SectionTitle>
+            <s.ListContainer>
+              <s.ListItem>{t("footer:outros-impostos")}</s.ListItem>
               <s.ListItem>
                 <a href="mailto:contato@meifacil.com">contato@meifacil.com</a>
               </s.ListItem>
-              <s.ListItem>
-                Para atendimento sobre a conta MEI Fácil (login, cartão de
-                crédito, transferências e outros serviços):
-              </s.ListItem>
+              <s.ListItem>{t("footer:atendimento")}</s.ListItem>
               <s.ListItem>
                 <a href="mailto:contato@meifacil.com">contato@meifacil.com</a>
               </s.ListItem>
@@ -98,22 +103,12 @@ export const Footer = () => {
       </s.FooterContainer>
       <s.FooterSectionBottom>
         <div>
-          <s.TextCopyright>
-            Neon Pagamentos S.A. - Instituição de Pagamento © 2023.
-          </s.TextCopyright>
-          <s.TextCopyright>
-            Todos os direitos reservados. CNPJ: nº 20.855.875/0001-82.
-          </s.TextCopyright>
-          <s.WarningText>
-            A inscrição, alteração, regularização, baixa e demais itens
-            relativos ao MEI podem ser solicitados sem o acompanhamento dos
-            profissionais deste site e de forma gratuita nos órgãos públicos do
-            Governo. Esse site não faz parte do Governo e oferece serviço
-            privado e opcional.
-          </s.WarningText>
+          <s.TextCopyright>{t("footer:copyright-texto-1")}</s.TextCopyright>
+          <s.TextCopyright>{t("footer:copyright-texto-2")}</s.TextCopyright>
+          <s.WarningText>{t("footer:warning-text")}</s.WarningText>
         </div>
         <s.PrivacyContainer>
-          <p>Política de Privacidade | Termos de Uso | Mapa do Site</p>
+          <p>{t("footer:privacy-text")}</p>
         </s.PrivacyContainer>
       </s.FooterSectionBottom>
     </s.FooterWrapper>

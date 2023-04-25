@@ -1,1 +1,24 @@
-{"alteracao-de-dados-mei":"Alteração de dados MEI","blog":"Blog","cartao-cnpj":"Cartão CNPJ","cartao-de-credito":"Cartão de Crédito","ccmei":"CCMEI","comprar-com-boletos":"Comprar com boletos","contabilidade":"Contabilidade","conta-digital":"Conta Digital","cursos-do-mei":"Cursos do MEI","das":"DAS","dasn":"DASN","documentos-do-mei":"Documentos do MEI","duvidas":"Dúvidas","maquininha":"Maquininha","meios-de-pagamento":"Meios de pagamento","nota-fiscal":"Nota Fiscal","pagar-contas":"Pagar Contas","pix":"Pix","servico-de-contabilidade":"Serviço de contabilidade","servicos":"Serviços","servicos-para-mei":"Serviços para MEI","transferencias":"Transferências"}
+{
+  "das": "DAS",
+  "pix": "Pix",
+  "blog": "Blog",
+  "dasn": "DASN",
+  "ccmei": "CCMEI",
+  "duvidas": "Dúvidas",
+  "servicos": "Serviços",
+  "maquininha": "Maquininha",
+  "cartao-cnpj": "Cartão CNPJ",
+  "nota-fiscal": "Nota Fiscal",
+  "pagar-contas": "Pagar Contas",
+  "conta-digital": "Conta Digital",
+  "contabilidade": "Contabilidade",
+  "cursos-do-mei": "Cursos do MEI",
+  "transferencias": "Transferências",
+  "cartao-de-credito": "Cartão de Crédito",
+  "documentos-do-mei": "Documentos do MEI",
+  "servicos-para-mei": "Serviços para MEI",
+  "meios-de-pagamento": "Meios de pagamento",
+  "comprar-com-boletos": "Comprar com boletos",
+  "alteracao-de-dados-mei": "Alteração de dados MEI",
+  "servico-de-contabilidade": "Serviço de contabilidade"
+}

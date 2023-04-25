@@ -10,12 +10,12 @@ import { useTranslation } from "next-i18next";
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["index"])),
+      ...(await serverSideTranslations(locale, ["index", "navbar", "footer"])),
     },
   };
 }
 
-export default function Home(locale: any) {
+export default function Home() {
   const { t } = useTranslation();
 
   return (
